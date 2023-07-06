@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 public class RandomArticleGenerator implements ArticleGenerator {
     @Override
     public Article generate(List<Word> words) {
-
         Collections.shuffle(words);
         var content = words.stream()
                 .map(Word::getValue)
